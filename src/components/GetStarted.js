@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./GetStarted.css";
 
 function GetStarted() {
@@ -9,7 +10,9 @@ function GetStarted() {
         <blockquote className="quote">
           "One man's trash is another man's treasure"
         </blockquote>
-        <button className="buttonStart">Get Started</button>
+        <Link to="/choice">
+          <button className="buttonStart">Get Started</button>
+        </Link>
       </div>
       <div className="vendeur">
         <h2 className="invite">
