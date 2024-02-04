@@ -1,19 +1,26 @@
 .accroche {
-    align-items: center;
+    display: block;
+    padding: 20px;
 }
 
 .slogan {
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black -2px 2px 5px;
     text-decoration: dashed ;
     font-size: 70px;
-    color:#e4893f;
+    font-style: italic;
+    color:#f2ac73;
 }
 
 .quote {
-
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    text-shadow: black -2px 2px 5px;
 }
 
 .buttonStart {
+    margin: auto;
+    display: block;
     background-color: #e28436;
     height: 75px;
     width: 150px;
@@ -28,7 +35,6 @@
     line-height: 20px;
     text-align: center;
     text-decoration: none;
-    vertical-align: middle;
     white-space: nowrap;
 }
     
@@ -37,11 +43,17 @@
 }
 
 .vendeur {
-    bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .invite {
-    
+    padding: 20px;
+    color: #f2ac73;
+    font-weight: bold;
+    text-shadow: black -2px 2px 5px;
 }
 
 .buttonSell {
@@ -62,6 +74,7 @@
     text-decoration: none;
     vertical-align: middle;
     white-space: nowrap;
+    margin: 10px;
 }
     
 .buttonSell:hover {

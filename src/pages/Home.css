@@ -12,6 +12,7 @@
   }
 
 .gettingStarted {
-    bottom: 0;
+    position: relative;
+    align-self: center;
 }
   
