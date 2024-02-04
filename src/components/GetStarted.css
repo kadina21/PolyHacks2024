@@ -1,0 +1,69 @@
+.accroche {
+    align-items: center;
+}
+
+.slogan {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-decoration: dashed ;
+    font-size: 70px;
+    color:#e4893f;
+}
+
+.quote {
+
+}
+
+.buttonStart {
+    background-color: #e28436;
+    height: 75px;
+    width: 150px;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+    
+.buttonStart:hover {
+    background-color: #9b5b27;
+}
+
+.vendeur {
+    bottom: 0;
+}
+
+.invite {
+    
+}
+
+.buttonSell {
+    background-color: #4ca451;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 4px 14px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+    
+.buttonSell:hover {
+    background-color: #316d34;
+}
