@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Navbar from "../components/Navbar";
 import Checkbox from '../components/Checkbox';
 import React from 'react';
 import './Choice.css';
@@ -28,32 +29,39 @@ function Choice() {
 
 
     return (
-      <div className="choice-container">
-          <h1 className="choice-title">Choice Page</h1>
+        <div className="backgroundImage">
+        <div className="navbar">
+          <Navbar />
+        </div>
+        <div className="choice-container">
+          <h1 className="choice-title">Catégories</h1>
           <div className="checkbox-group">
               <Checkbox
-                  label="Value 1"
+                  label="Catégorie 1"
                   value={checkedOne}
                   onChange={handleChangeOne}
               />
               <Checkbox
-                  label="Value 2"
+                  label="Catégorie 2"
                   value={checkedTwo}
                   onChange={handleChangeTwo}
               />
           </div>
           <div className="checkbox-group">
               <Checkbox
-                  label="Value 3"
+                  label="Catégorie 3"
                   value={checkedThree}
                   onChange={handleChangeThree}
               />
               <Checkbox
-                  label="Value 4"
+                  label="Catégorie 4"
                   value={checkedFour}
                   onChange={handleChangeFour}
               />
           </div>
+        </div>
+      
+          
           <div className='button-suivant'>
           <Link to="/map"><button className="choice-button">Suivant</button></Link>
           </div>

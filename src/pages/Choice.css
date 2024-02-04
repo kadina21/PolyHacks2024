@@ -5,6 +5,10 @@
   .choice-title {
     margin-bottom: 20px;
     font-style: italic;
+    color:#f2ac73;
+    text-decoration: dashed ;
+    font-size: 70px;
+    font-style: italic;
   }
   
   .checkbox-group {

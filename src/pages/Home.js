@@ -1,14 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Navbar from "../components/Navbar";
+import GetStarted from "../components/GetStarted";
+import "./Home.css";
 
 function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <Link to="/choice"><button>Go to Choice Page</button></Link>
-      <Link to="/map"><button>Go to Map Page</button></Link>  
-      
-    </div>
+    <>
+      <div className="backgroundImage">
+        <div className="navbar">
+          <Navbar />
+        </div>
+        <div className="gettingStarted">
+          <GetStarted />
+        </div>
+      </div>
+    </>
   );
 }
 
