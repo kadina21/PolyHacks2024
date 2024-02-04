@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Checkbox from "../components/Checkbox";
 import { Link } from "react-router-dom";
@@ -11,20 +11,45 @@ function Choice() {
   const [checkedThree, setCheckedThree] = React.useState(false);
   const [checkedFour, setCheckedFour] = React.useState(false);
 
-  const handleChangeOne = () => {
+  const [filters, setFilters] = useState({});
+
+  const handleChangeOne = (event) => {
+    const { name, checked } = event.target;
+    setFilters((prev) => ({ ...prev, [name]: checked }));
     setCheckedOne(!checkedOne);
   };
 
-  const handleChangeTwo = () => {
+  const handleChangeTwo = (event) => {
+    const { name, checked } = event.target;
+    setFilters((prev) => ({ ...prev, [name]: checked }));
     setCheckedTwo(!checkedTwo);
   };
 
-  const handleChangeThree = () => {
+  const handleChangeThree = (event) => {
+    const { name, checked } = event.target;
+    setFilters((prev) => ({ ...prev, [name]: checked }));
     setCheckedThree(!checkedThree);
   };
 
-  const handleChangeFour = () => {
+  const handleChangeFour = (event) => {
+    const { name, checked } = event.target;
+    setFilters((prev) => ({ ...prev, [name]: checked }));
     setCheckedFour(!checkedFour);
+  };
+
+  const submitFilters = () => {
+    fetch("http://localhost:3001/api/data", {
+      method: "POST", // Ou GET avec des paramètres de requête, selon votre configuration
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ filters }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // Traiter les données filtrées reçues
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
