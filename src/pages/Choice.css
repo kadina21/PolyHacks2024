@@ -1,0 +1,73 @@
+.choice-container {
+    padding: 20px;
+  }
+  
+  .choice-title {
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .checkbox-group {
+    background-color: rgb(229, 243, 243);
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    
+
+    margin-left: 400px;
+    margin-right: 400px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .checkbox-input {
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 10px;
+    
+  }
+  
+  .checkbox-label {
+    vertical-align: middle;
+  }
+  
+  .value-box {
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #cf7c39;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 5px;
+    color: #1c1d1f;
+    height: 50px;
+    width: 120px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+
+.choice-button {
+    border-radius: 3px;
+    border: 2px solid #1b1b19;
+    width: 200px;
+    height: 50px;
+    background-color: #f28b37;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+  
+.button-suivant {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
