@@ -1,14 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import GetStarted from "../components/GetStarted";
 
-function Home() {
+function Login() {
   return (
     <div>
       <Navbar />
-      <GetStarted />
     </div>
   );
 }
 
-export default Home;
+export default Login;
